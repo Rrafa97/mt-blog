@@ -1,11 +1,11 @@
-<!-- ---
+---
 title: 《高级魔药制作-Advanced Potion-Making》
-date: 2021-1-23
+date: 2019-3-23
 categories:
  - demo
 tags:
  - 魔药学
---- -->
+---
 
 :::tip
 [原文作者:Cynthia-拉文克劳毕业生](https://zhuanlan.zhihu.com/p/72727500)

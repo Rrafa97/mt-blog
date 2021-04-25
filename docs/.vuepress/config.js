@@ -36,6 +36,11 @@ module.exports = {
         desc: '一个简单的色彩选择网站',
         logo: "/favicon.ico",
         link: 'http://rrafa.icu/'
+      },
+      {
+        title: 'https://bladexue.github.io/',
+        desc: 'react',
+        link: 'http://rrafa.icu/'
       }
     ]
   }
