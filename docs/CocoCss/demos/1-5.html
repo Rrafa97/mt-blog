@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.pesudo {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 120px;
+				padding: 60px;
+				text-align: center;
+				color: white;
+				font-size: 200%;
+				border-radius: 1em;
+				background: #00aabb;
+				cursor: pointer;
+			}
+
+			.pesudo:before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				border-radius: 1em;
+				background: rgba(0, 0, 0, .1);
+			}
+
+			.pesudo:hover:before {
+				content: "";
+			}
+
+			.pesudo:after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				border-radius: 1em;
+				background: rgba(255, 255, 255, .2);
+			}
+
+			.pesudo:active:after {
+				content: "";
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pesudo">.pesudo</div>
+	</body>
+</html>

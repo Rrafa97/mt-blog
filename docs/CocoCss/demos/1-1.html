@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+
+			#content {
+				position: absolute;
+				top: 50%;
+				width: 140px;
+				height: 140px;
+				left: 50%;
+				background: rgb(137, 66, 118);
+				line-height: 140px;
+				text-align: center;
+				transform: translate(-50%,-50%) rotate(45deg);
+				color: white;
+				font-size: 32px;
+			}
+			#content:after,
+			#content:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -70px;
+				border-radius: 50%;
+				width: 140px;
+				height: 140px;
+				background: rgb(137, 66, 118);
+				z-index: -1;
+			}
+			#content::after{
+				top: -70px;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			心形
+		</div>
+	</body>
+</html>

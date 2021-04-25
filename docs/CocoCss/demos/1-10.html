@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.underline {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 400px;
+				height: 200px;
+				text-align: center;
+				color: white;
+				font-size: 200%;
+				background: #00aabb;
+				border-radius: .5em;
+			}
+
+			.underline1-ajkps,
+			.underline2-ajkps,
+			.underline3-ajkps {
+				cursor: pointer;
+				position: absolute;
+				left: 16%;
+				text-shadow: 3px 0 #00aabb, -3px 0 #00aabb;
+				transition: 1s;
+			}
+
+			.underline1-ajkps {
+				top: 10%;
+				background: linear-gradient(white, white) no-repeat;
+				background-size: 100% 3px;
+				background-position: -10em 1.15em;
+			}
+
+			.underline1-ajkps:hover {
+				background-position: 0 1.15em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="underline">
+			<div class="underline1-ajkps">.underline1-ajkpys</div>
+			<!-- <div class="underline2-ajkps">.underline2-ajkpys</div>
+			<div class="underline3-ajkps">.underline3-ajkpys</div> -->
+		</div>
+	</body>
+</html>

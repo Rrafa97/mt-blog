@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.bubbly{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				padding: 0 96px;
+				height: 140px;
+				transform: translate(-50%,-50%);
+				background: rgb(39, 117, 182);
+				text-align: center;
+				line-height: 140px;
+				color: white;
+				font-size: 32px;
+				border-radius: 10px;
+			}
+			.bubbly::after{
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				border: 17px solid transparent;
+				border-top-color: rgb(39, 117, 182);
+				border-bottom: 0;
+				border-left: 0;
+				margin: 0 0 -17px -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bubbly">
+			222
+		</div>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				background: #000000;
+			}
+
+			 .drop-water {
+			          position: relative;
+			          width: 640px;
+			          height: 126px;
+			          color: #fff;
+			          font-size: 120px;
+					  font-family: "arial black";
+			          text-align: center;
+			          margin: 100px auto;
+			          border-bottom: 10px solid #fff;
+			          -webkit-transform: skewY(5deg);
+			                  transform: skewY(5deg);
+			        }
+			        .drop-water::before {
+			          position: absolute;
+			          content: "";
+			          left: 0;
+			          bottom: -20px;
+			          width: 10px;
+			          height: 20px;
+			          border-radius: 50%;
+			          background: #fff;
+			          -webkit-transform: translate(0, 0);
+			                  transform: translate(0, 0);
+			          -webkit-animation: move 7.5s ease-in-out infinite;
+			                  animation: move 7.5s ease-in-out infinite;
+			        }
+			        .drop-water::after {
+			          position: absolute;
+			          content: "";
+			          left: 0;
+			          bottom: -20px;
+			          width: 10px;
+			          height: 20px;
+			          border-radius: 50%;
+			          background: #fff;
+			          -webkit-transform: translate(0, 0);
+			                  transform: translate(0, 0);
+			          -webkit-animation: move 7.5s ease-in-out 1s infinite;
+			                  animation: move 7.5s ease-in-out 1s infinite;
+			        }
+			
+			        @-webkit-keyframes move {
+			          80% {
+			            bottom: -30px;
+			            -webkit-transform: translate(620px, 0);
+			                    transform: translate(620px, 0);
+			          }
+			          93% {
+			            -webkit-transform: translate(620px, 3px);
+			                    transform: translate(620px, 3px);
+			            opacity: 1;
+			          }
+			          100% {
+			            -webkit-transform: translate(620px, 150px);
+			                    transform: translate(620px, 150px);
+			            opacity: 0;
+			          }
+			        }
+			
+			        @keyframes move {
+			          80% {
+			            bottom: -30px;
+			            -webkit-transform: translate(620px, 0);
+			                    transform: translate(620px, 0);
+			          }
+			          93% {
+			            -webkit-transform: translate(620px, 3px);
+			                    transform: translate(620px, 3px);
+			            opacity: 1;
+			          }
+			          100% {
+			            -webkit-transform: translate(620px, 150px);
+			                    transform: translate(620px, 150px);
+			            opacity: 0;
+			          }
+			        }
+			      
+		</style>
+	</head>
+	<body>
+		<div class="drop-water">MAGICSS</div>
+	</body>
+</html>
